@@ -9,10 +9,10 @@
 #sed -i 's/192.168.1.1/192.168.50.250/g' package/base-files/files/bin/config_generate
 
 # Clone Lean's latest sources.
-pushd package
+#pushd package
 #git clone --depth=1 https://github.com/coolsnowwolf/lede
-git clone --depth=1 https://github.com/openwrt/openwrt
-popd
+#git clone --depth=1 https://github.com/openwrt/openwrt
+#popd
 
 # Copy Lean's packages to ./package/lean.
 #mkdir package/lean
