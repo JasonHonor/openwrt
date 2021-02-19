@@ -7,11 +7,11 @@
 #=================================================
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.250/g' package/base-files/files/bin/config_generate
-pushd package
-echo "src-git oui https://github.com/zhaojh329/oui.git" >> feeds.conf.default
-./scripts/feeds update oui
-./scripts/feeds install -a -p oui
-popd
+#pushd package
+#echo "src-git oui https://github.com/zhaojh329/oui.git" >> feeds.conf.default
+#./scripts/feeds update oui
+#./scripts/feeds install -a -p oui
+#popd
 
 # Clone Lean's latest sources.
 #pushd package
