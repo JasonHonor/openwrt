@@ -107,7 +107,8 @@ sed -i 's/16384/65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 # Remove IPV6
 sed -i 's/ip6tables //g' include/target.mk
-sed -i 's/odhcpd-ipv6only odhcp6c //g' include/target.mk
+sed -i 's/odhcpd-ipv6only //g' include/target.mk
+sed -i 's/odhcp6c //g' include/target.mk
 
 # Change dnsmasq to dnsmasq-full
 sed -i 's/dnsmasq i/dnsmasq-full i/g' include/target.mk
