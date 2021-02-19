@@ -113,9 +113,9 @@ sed -i 's/odhcpd-ipv6only odhcp6c //g' include/target.mk
 sed -i 's/dnsmasq i/dnsmasq-full i/g' include/target.mk
 
 # Convert Translation
-cp ../scripts/convert-translation.sh .
-chmod +x ./convert-translation.sh
-./convert-translation.sh || true
+#cp ../scripts/convert-translation.sh .
+#chmod +x ./convert-translation.sh
+#./convert-translation.sh || true
 
 # Remove upx
 cp ../scripts/remove-upx.sh .
