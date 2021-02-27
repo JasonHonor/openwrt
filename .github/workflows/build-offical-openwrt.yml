@@ -70,7 +70,7 @@ jobs:
         cd openwrt
         echo "::set-env name=OPENWRTROOT::$PWD"
         sed -i 's/luci.git/luci.git\;openwrt-19.07/g' feeds.conf.default
-        echo "src-git oui https://github.com/zhaojh329/oui.git" >> feeds.conf.default
+        echo "src-git oui https://github.com/JasonHonor/oui.git" >> feeds.conf.default
         ./scripts/feeds update -a
 
     - name: Install Feeds
