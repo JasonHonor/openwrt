@@ -32,8 +32,8 @@ env:
   KMODS_IN_FIRMWARE: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: true
-  UPLOAD_WETRANSFER: true
+  UPLOAD_COWTRANSFER: false
+  UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
 
 jobs:
@@ -71,6 +71,7 @@ jobs:
         echo "::set-env name=OPENWRTROOT::$PWD"
         sed -i 's/luci.git/luci.git\;openwrt-19.07/g' feeds.conf.default
         echo "src-git oui https://github.com/zhaojh329/oui.git" >> feeds.conf.default
+        ./scripts/feeds update oui
         ./scripts/feeds update -a
 
     - name: Install Feeds
